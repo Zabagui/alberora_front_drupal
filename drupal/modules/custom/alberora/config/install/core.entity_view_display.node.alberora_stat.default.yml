@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.alberora_stat.field_stat_type
+    - node.type.alberora_stat
+  module:
+    - alberora
+    - user
+id: node.alberora_stat.default
+targetEntityType: node
+bundle: alberora_stat
+mode: default
+content:
+  field_stat_type:
+    weight: 101
+    label: hidden
+    settings: { }
+    third_party_settings: { }
+    type: stat_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: { }
+    third_party_settings: { }
+hidden:
+  langcode: true

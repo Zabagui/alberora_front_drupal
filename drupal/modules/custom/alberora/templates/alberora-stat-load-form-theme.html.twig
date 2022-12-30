@@ -1,0 +1,28 @@
+<aside class="alberora_stat_load_form">
+    {{ form.form_build_id }}
+    {{ form.form_token }}
+    {{ form.form_id }}
+
+    <div class="table">
+        <table>
+            <tr>
+                <td>{{ form.load }}</td>
+                <td>{{ form.start_date }}</td>
+                <td>{{ form.end_date }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.personaSelect }}</td>
+                <td>{{ form.humanSelect }}</td>
+                <td>{{ form.browserSelect }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.actionsPersona }}</td>
+                <td>{{ form.actionsMerge }}</td>
+                <td>{{ form.actionsFilter }}</td>
+            </tr>
+            <tr>
+                <td colspan="3">{{ form.table_details }}</td>
+            </tr>
+        </table>
+    </div>
+</aside>

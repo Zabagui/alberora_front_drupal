@@ -1,0 +1,42 @@
+<aside class="alberora_stat_parent_form">
+    {{ form.form_build_id }}
+    {{ form.form_token }}
+    {{ form.form_id }}
+
+    <div class="table">
+        <table>
+            <tr>
+                <td width="30%">{{ form.visitor }}</td>
+                <td colspan="2">{{ form.geolocalisation }}</td>
+            </tr>
+            <tr>
+                <td rowspan="2">{{ form.chart_types }}</td>
+                <td>{{ form.persona }}{{ form.personaSelect }}{{ form.actionsPersona }}</td>
+                <td rowspan="2">{{ form.agent }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.browser }}{{ form.browserSelect }}{{ form.actionsBrowser }}</td>
+            </tr>
+            <tr>
+                <td rowspan="2">{{ form.table_logins }}</td>
+                <td colspan="2">{{ form.table_uuids }}</td>
+            </tr>
+            <tr>
+                <td colspan="2">{{ form.table_ips }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.targetSelect }}</td>
+                <td>{{ form.trafficSelect }}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{{ form.typeSelect }}</td>
+                <td>{{ form.warningSelect }}</td>
+                <td>{{ form.actions }}</td>
+            </tr>
+            <tr>
+                <td colspan="3">{{ form.table_pages }}</td>
+            </tr>
+        </table>
+    </div>
+</aside>

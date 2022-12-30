@@ -1,0 +1,62 @@
+<aside class="alberora_stat_visitor_form">
+    {{ form.form_build_id }}
+    {{ form.form_token }}
+    {{ form.form_id }}
+
+    <div class="table">
+        <table>
+            <tr>
+                <td colspan="2">
+                    {{ form.visitorName }}{{ form.visitor }}
+                </td>
+                <td colspan="2">
+                    {{ form.actionsName }}
+                </td>
+                <td width="33%" rowspan="3">
+                    {{ form.chart_types }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p>{{ form.agent }}</p>
+                    <p>{{ form.host }}</p>
+                    <p>{{ form.geolocalisation }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{ form.persona }}{{ form.personaSelect }}
+                </td>
+                <td>
+                    {{ form.actionsPersona }}
+                </td>
+                <td>
+                    {{ form.browser }}{{ form.browserSelect }}
+                </td>
+                <td>
+                    {{ form.actionsBrowser }}
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="vertical-align:top">{{ form.table_ips }}</td>
+                <td style="vertical-align:top">{{ form.table_uuids }}</td>
+                <td style="vertical-align:top">{{ form.table_logins }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>{{ form.targetSelect }}</td>
+                <td>{{ form.visitSelect }}</td>
+                <td>{{ form.trafficSelect }}</td>
+                <td>{{ form.typeSelect }}</td>
+                <td>{{ form.warningSelect }}</td>
+                <td>{{ form.actions }}</td>
+            </tr>
+            <tr>
+                <td colspan="6">{{ form.table_pages }}</td>
+            </tr>
+        </table>
+    </div>
+</aside>

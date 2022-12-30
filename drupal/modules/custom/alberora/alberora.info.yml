@@ -1,0 +1,10 @@
+name: Alberora
+description: Alberora module for statistics and cybersecurity
+package: Custom
+
+type: module
+core_version_requirement: ^8.8 || ^9
+
+configure: alberora.admin_page
+
+php: 7.2

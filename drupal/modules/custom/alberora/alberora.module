@@ -1,0 +1,87 @@
+<?php
+
+/**
+ * @file
+ * Alberora Framework module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function alberora_help($route_name, RouteMatchInterface $route_match)
+{
+    return match ($route_name) {
+        'help.page.alberora' => '<p>' . t('The Alberoraon Framework help page') . '</p>',
+        default => '<p>' . t('The Alberoraon Framework default page') . '</p>',
+    };
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function alberora_theme($existing, $type, $theme, $path)
+{
+    return [
+        'help_page' => [
+            'variables' => [
+                'topic' => '',
+                'title' => '',
+                'css' => '',
+            ],
+        ],
+        'alberora_stat_admin_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_csp_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_dashboard_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_ip_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_ips_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_load_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_login_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_logins_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_monitoring_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_name_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_pages_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_parent_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_statistics_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_uuid_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_uuids_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_visitor_form_theme' => [
+            'render element' => 'form',
+        ],
+        'alberora_stat_visitors_form_theme' => [
+            'render element' => 'form',
+        ],
+    ];
+}

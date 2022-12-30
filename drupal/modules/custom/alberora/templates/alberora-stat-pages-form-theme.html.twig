@@ -1,0 +1,30 @@
+<aside class="alberora_stat_pages_form">
+    {{ form.form_build_id }}
+    {{ form.form_token }}
+    {{ form.form_id }}
+
+    <div class="table">
+        <table>
+            <tr>
+                <td colspan="2">{{ form.targetSelect }}</td>
+                <td colspan="2">{{ form.chartPeriodSelect }}</td>
+                <td colspan="1">{{ form.chartTypeSelect }}</td>
+                <td>{{ form.chartActions }}</td>
+            </tr>
+            <tr>
+                <td colspan="6">{{ form.chart_pages }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.personaSelect }}</td>
+                <td>{{ form.visitSelect }}</td>
+                <td>{{ form.trafficSelect }}</td>
+                <td>{{ form.typeSelect }}</td>
+                <td>{{ form.warningSelect }}</td>
+                <td>{{ form.actions }}</td>
+            </tr>
+            <tr>
+                <td colspan="6">{{ form.table_pages }}</td>
+            </tr>
+        </table>
+    </div>
+</aside>

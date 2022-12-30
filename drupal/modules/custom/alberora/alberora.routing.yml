@@ -1,0 +1,7 @@
+alberora.admin_page:
+  path: '/admin/config/development/alberora'
+  defaults:
+    _form: '\Drupal\alberora\Form\AdminForm'
+    _title: 'Alberora database configuration'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,4 @@
+alberora.admin_page:
+  route_name: alberora.admin_page
+  base_route: alberora.admin_page
+  title: 'Alberora Database Configuration'

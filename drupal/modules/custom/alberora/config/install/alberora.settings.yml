@@ -1,0 +1,8 @@
+langcode: 'en'
+externalDatabase: 'statdatabase'
+statIPPage: '/stat_ip.php?id='
+statLoginPage: '/stat_login.php?id='
+statNamePage: '/stat_name.php?id='
+statParentPage: '/stat_parent.php?id='
+statUUIDPage: '/stat_uuid.php?id='
+statVisitorPage: '/stat_visitor.php?id='

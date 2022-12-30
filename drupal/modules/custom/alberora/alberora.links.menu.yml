@@ -1,0 +1,5 @@
+alberora.admin_page:
+  title: 'Alberora'
+  parent: system.admin_config_development
+  description: 'Alberora configuration.'
+  route_name: alberora.admin_page

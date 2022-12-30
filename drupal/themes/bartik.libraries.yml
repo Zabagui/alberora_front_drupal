@@ -1,0 +1,6 @@
+# bartik.libraries.yml
+superfish:
+  version: 1.0
+  css:
+    theme:
+      css/superfish.module.css: { }

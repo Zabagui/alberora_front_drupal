@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stat_type
+    - node.type.alberora_stat
+  module:
+    - alberora
+id: node.alberora_stat.field_stat_type
+field_name: field_stat_type
+entity_type: node
+bundle: alberora_stat
+label: 'Stat type'
+description: ''
+required: true
+translatable: false
+default_value:
+  - stattype: '-1'
+default_value_callback: ''
+settings: { }
+field_type: stat_code
